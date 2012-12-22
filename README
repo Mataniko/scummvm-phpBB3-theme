@@ -1,1 +1,15 @@
 A phpBB3 theme for the ScummVM forums, based on the default prosilver theme
+
+To create this theme:
+- Copy all of the files from the styles/prosilver folder inside a new folder,
+  style/scummvm
+- Remove all of the html files inside styles/scummvm/template
+  This is done to keep the scummvm theme easily in sync with any updates or
+  additions to the prosilver theme. Check here for more info:
+  http://blog.phpbb.com/2008/07/31/templating-just-got-easier/
+- Replace all of the files in the new styles/scummvm folder with the ones
+  inside this directory
+- You can now select this theme inside the admin control panel
+
+The 3 preview images are not part of the theme, they are just here to easily
+monitor progress.
