@@ -1,0 +1,126 @@
+/* Overrides for the ScummVM forum theme */
+
+body, table {
+	font-family: verdana,tahoma,arial,helvetica,sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+html, body {
+	background-color: #efc418;	
+}
+
+html, body {
+	background-repeat: repeat-x;
+	background-image: url('styles/scummvm/theme/images/body-bg.png');
+	margin: 0px;
+}
+
+/* Top headers when viewing topics (category, topics, posts etc) */
+.topiclist {
+	color: #fff;
+	font-weight: bold;
+	background: #a82709;
+	padding: 6px;
+}
+
+/* Remove the rounded corner image masks, as they look awful with non-white backgrounds like ours */
+span.corners-top, span.corners-top span, span.corners-bottom, span.corners-bottom span {
+	background-image: none;
+}
+
+span.corners-top span, span.corners-bottom span {
+	background-color: #fbf1ce;
+}
+
+/* The bit around the forum list */
+.forabg, .forumbg {
+	background-color: #fbf1ce;
+	background-image: none;
+}
+
+/* Forum list items outer */
+ul.forums {
+	background-color: #E8E7E7;
+	background-image: none;
+}
+
+/* Forum list items inner */
+ul.topiclist dt {
+	font-size: 11px;
+	font-weight: normal;
+	color: #000;
+}
+
+ul.topiclist .header dt {
+	font-weight: bold;
+	color: #fff;
+}
+
+ul.topiclist dt a.forumtitle {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.topics, .posts, .lastpost {
+	font-weight: normal;
+}
+
+/* Top/bottom bars */
+.navbar {
+	background-color: #fbf1ce;
+}
+
+#innerheader {
+	width: 100%;
+	height: 50px;
+	clear: both;
+}
+
+ul.linklist {
+	float: left;
+	clear: both;
+}
+
+#page-footer .navbar .linklist, .navlinks {
+	width: 100%;
+}
+
+.navbar .leftside {
+	float: left;
+	clear: left;
+}
+
+.navbar .rightside {
+	float: right;
+	clear: right;
+}
+
+#site-description {
+	height: 60px;
+}
+
+#page-body {
+	padding: 5px;
+	margin: 0px;
+	background-color: #fbf1ce;
+}
+
+/* TODO */
+#search, #search a {
+	color: #000;
+}
+
+/* Theme the permissions box. NOTE: We've added an ID for this explicitly in the template */
+#permissions {
+	padding: 5px;
+	width: 250px;
+	background-color: #E8E7E7;
+	border: 1px solid #aaa;
+}
+
+/* Link styling */
+a                         { text-decoration: underline; font-size: 11px; color: #a33; }  
+a:link               { text-decoration: underline; font-size: 11px; color: #a33; }
+a:visited         { text-decoration: underline; font-size: 11px; color: #a33; }
+a:hover             { text-decoration: none;      font-size: 11px; color: #f00; } 
