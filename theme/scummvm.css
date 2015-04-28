@@ -1,126 +1,247 @@
-/* Overrides for the ScummVM forum theme */
-
-body, table {
-	font-family: verdana,tahoma,arial,helvetica,sans-serif;
-	font-size: 8pt;
-	font-weight: normal;
+.header {
+  background: #a82709 url(./images/par-head.png) top left repeat-x;
 }
 
-html, body {
-	background-color: #efc418;	
+#header-links {
+  margin-top: 13px;
+  padding: 10px 6px;
+  text-align: right;
 }
 
-html, body {
-	background-repeat: repeat-x;
-	background-image: url('styles/scummvm/theme/images/body-bg.png');
-	margin: 0px;
+#header-links-forum {
+  padding: 10px 6px;
+  text-align: right;
 }
 
-/* Top headers when viewing topics (category, topics, posts etc) */
-.topiclist {
-	color: #fff;
-	font-weight: bold;
-	background: #a82709;
-	padding: 6px;
+@media (min-width: 890px) {
+  #header-links {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 202px;
+    padding: 10px;
+    z-index: 1;
+    margin: 0;
+  }
+  
+  #header-links-forum {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+  
+  .header-time {
+    margin-top: 22px;
+  }
 }
 
-/* Remove the rounded corner image masks, as they look awful with non-white backgrounds like ours */
-span.corners-top, span.corners-top span, span.corners-bottom, span.corners-bottom span {
-	background-image: none;
+#branding,
+#search-box,
+#page-header .navbar,
+#page-footer .navbar,
+.online-list,
+.birthday-list {
+  display: none;
 }
 
-span.corners-top span, span.corners-bottom span {
-	background-color: #fbf1ce;
+.gog {
+  font-weight: bold;
 }
 
-/* The bit around the forum list */
-.forabg, .forumbg {
-	background-color: #fbf1ce;
-	background-image: none;
+#site-description h1 {
+  margin-top:  25px;
 }
 
-/* Forum list items outer */
-ul.forums {
-	background-color: #E8E7E7;
-	background-image: none;
+#site-description p {
+  margin-bottom: 5px;
 }
 
-/* Forum list items inner */
+.search-header {
+  box-shadow: 0 0 10px #dbd2ab;
+}
+
+a { text-decoration: underline; }
+a:hover	{ text-decoration: none; }
+
+.time {
+  margin-bottom: 5px;
+}
+
+#wrap {
+  border:  none;
+	border-radius: 10px;
+	max-width: 1098px;
+  background: #fbf1ce url("./images/top_bg.gif") top left repeat-x;
+  padding: 15px 17px;
+}
+
+.forum_unread,
+.forum_unread_subforum {
+  background-image: url("./images/folder_new.gif");
+}
+
+.forum_read {
+  background-image: url("./images/folder.gif");
+}
+
+li.header dt, li.header dd {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 7px 0 7px 0;
+  text-transform: inherit;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+li.header dd {
+  border-left: solid 1px #961809;
+}
+
+.forumcategory {
+  font-size: 13px;
+  font-weight: bold;
+  color: #444;
+  background: #c0c0c0;
+  padding: 3px 1px;
+}
+
+dl a.icon-link {
+  margin-left: 0;
+  width: 23px;
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+}
+
+dd.posts {
+  width: 57px;
+  font-size: 13px;
+}
+
+dd.topics {
+  width: 67px;
+  font-size: 13px;
+}
+
+dd.lastpost {
+	width: 154px;
+}
+
+dd.moderation {
+  width: 208px;
+  text-align: center;
+}
+
 ul.topiclist dt {
-	font-size: 11px;
-	font-weight: normal;
-	color: #000;
+  margin-right: -486px;
 }
 
-ul.topiclist .header dt {
-	font-weight: bold;
-	color: #fff;
+li.header dt {
+  margin-right: -486px;
 }
 
-ul.topiclist dt a.forumtitle {
-	font-weight: bold;
-	font-size: 13px;
+ul.topiclist dt .list-inner,
+ul.topiclist dt .list-inner-stats {
+  margin-right: 486px;
 }
 
-.topics, .posts, .lastpost {
-	font-weight: normal;
+ul.topiclist.forums dt .list-inner,
+ul.topiclist.topics dt .list-inner,
+ul.topiclist.forums dt .list-inner-stats {
+  border-left: 1px solid #c0c0c0;
 }
 
-/* Top/bottom bars */
-.navbar {
-	background-color: #fbf1ce;
+ul.topiclist dt .list-inner-stats {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
-#innerheader {
-	width: 100%;
-	height: 50px;
-	clear: both;
+.icon_topic_latest {
+  display: inline-block;
+  width: 18px;
+  height: 9px;
+  overflow: hidden;
+  background: transparent url('./images/icon_latest_reply.gif') no-repeat left top;
+  text-indent: -10000px;
+  white-space: nowrap;
 }
 
-ul.linklist {
-	float: left;
-	clear: both;
+dd.lastpost > span .icon_topic_latest {
+  text-indent: 10000px;
 }
 
-#page-footer .navbar .linklist, .navlinks {
-	width: 100%;
+.pullright {
+  float: right;
+  margin-left: 5px;
+  text-align: right;  
 }
 
-.navbar .leftside {
-	float: left;
-	clear: left;
+#forumlegend {
+  margin: 5px auto;
+  max-width: 300px;
 }
 
-.navbar .rightside {
-	float: right;
-	clear: right;
+#forumlegend > span {
+  display: inline-block;
+  padding-left: 25px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;  
 }
 
-#site-description {
-	height: 60px;
+#forumlegend > span:last-child {
+  margin-right: 0;
 }
 
-#page-body {
-	padding: 5px;
-	margin: 0px;
-	background-color: #fbf1ce;
+.icon_new_posts,
+.icon_no_new_posts,
+.icon_closed_forum {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
-/* TODO */
-#search, #search a {
-	color: #000;
+.icon_new_posts {
+  background-image: url(./images/folder_new.gif);
 }
 
-/* Theme the permissions box. NOTE: We've added an ID for this explicitly in the template */
-#permissions {
-	padding: 5px;
-	width: 250px;
-	background-color: #E8E7E7;
-	border: 1px solid #aaa;
+.icon_no_new_posts {
+  background-image: url(./images/folder.gif);
 }
 
-/* Link styling */
-a                         { text-decoration: underline; font-size: 11px; color: #a33; }  
-a:link               { text-decoration: underline; font-size: 11px; color: #a33; }
-a:visited         { text-decoration: underline; font-size: 11px; color: #a33; }
-a:hover             { text-decoration: none;      font-size: 11px; color: #f00; } 
+.icon_closed_forum {
+  background-image: url(./images/folder_lock.gif);
+}
+
+.responsive-topics {
+  margin-top: 4px;
+}
+
+.logo {
+  padding: 0;
+  position: absolute;
+  top: 54px;
+  left: 3px;
+  z-index: 2;
+}
+
+.imageset.site_logo {
+  display: block;
+  background-image: url(./images/scummvm_logo_small.png);
+  padding-left: 89px;
+  padding-top: 26px;
+}
+
+@media (min-width: 640px) {
+  .logo {
+    top: -18px;
+  }
+  
+  .imageset.site_logo {
+  	background-image: url(./images/scummvm_logo.png);
+    padding-left: 199px;
+    padding-top: 65px;
+  }
+}
