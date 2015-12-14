@@ -26,9 +26,14 @@ body {
 
 /* Common block wrappers
 ----------------------------------------*/
-.headerbar, .navbar, .forabg, .forumbg, .post, .panel, ul.forumheaderbar {
+.headerbar, .navbar, .forabg, .forumbg, .post, .panel {
+	border-radius: 0;
 	margin-left: -5px;
 	margin-right: -5px;
+}
+
+#cp-main .forabg, #cp-main .forumdb, #cp-main .post, #cp-main .panel {
+	border-radius: 7px;
 }
 
 /* Logo block
@@ -37,6 +42,13 @@ body {
 	float: none;
 	width: auto;
 	text-align: center;
+}
+
+.logo {
+	/* change display value to inline-block to show logo */
+	display: none;
+	float: none;
+	padding: 10px;
 }
 
 #site-description h1, #site-description p {
@@ -120,11 +132,10 @@ ul.topiclist dd.mark {
 /* Forums and topics lists
 ----------------------------------------*/
 ul.topiclist.forums dt {
-	margin-right: -154px;
+	margin-right: -250px;
 }
-ul.topiclist.forums dt .list-inner,
-ul.topiclist.forums dt .list-inner-stats {
-	margin-right: 154px;
+ul.topiclist.forums dt .list-inner {
+	margin-right: 250px;
 }
 
 ul.topiclist.forums dd.lastpost {

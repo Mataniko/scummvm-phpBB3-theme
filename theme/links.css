@@ -8,10 +8,11 @@ a {
 	text-decoration: none;
 }
 
-a:hover	{ text-decoration: none; }
+a:hover	{ text-decoration: underline; }
 
 /* Coloured usernames */
 .username-coloured {
+	font-weight: bold;
 	display: inline !important;
 	padding: 0 !important;
 }
@@ -59,11 +60,18 @@ li.breadcrumbs span:first-child > a {
 
 /* Links for forum/topic lists */
 a.forumtitle {
-	font-size: 1.1em;
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+	font-size: 1.2em;
 	font-weight: bold;
+	text-decoration: none;
+}
+
+a.forumtitle:hover {
+	text-decoration: underline;
 }
 
 a.topictitle {
+	font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;

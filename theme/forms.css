@@ -5,6 +5,7 @@
 ----------------------------------------*/
 fieldset {
 	border-width: 0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
 }
 
@@ -13,9 +14,11 @@ input {
 	vertical-align: middle;
 	padding: 0 3px;
 	font-size: 1em;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 
 select {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	cursor: pointer;
 	vertical-align: middle;
@@ -34,9 +37,11 @@ option {
 
 select optgroup option {
 	padding-right: 1em;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 
 textarea {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	width: 60%;
 	padding: 2px;
 	font-size: 1em;
@@ -45,6 +50,7 @@ textarea {
 
 label {
 	cursor: default;
+	padding-right: 5px;
 }
 
 label input {
@@ -145,28 +151,15 @@ fieldset.quick-login input {
 	width: auto;
 }
 
-fieldset.quick-login .quick-login-title,
-fieldset.quick-login .quick-login-controls,
-fieldset.quick-login .quick-login-forgot {
-  margin-bottom: 5px;
-}
-
-fieldset.quick-login .quick-login-remember {
-  margin-bottom: 15px;
-}
-
-fieldset.quick-login label > span {
-  display: none;
-}
-
 fieldset.quick-login input.inputbox {
-	width: 100px;
+	width: 15%;
 	vertical-align: middle;
+	margin-right: 5px;
 }
 
 fieldset.quick-login label {
-  margin-bottom: 5px;
 	white-space: nowrap;
+	padding-right: 2px;
 }
 
 /* Display options on viewtopic/viewforum pages  */
@@ -243,12 +236,20 @@ fieldset.submit-buttons input {
 }
 
 #message-box textarea {
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 	width: 450px;
 	height: 270px;
 	min-width: 100%;
 	max-width: 100%;
 	font-size: 1.2em;
 	resize: vertical;
+	outline: 3px dashed transparent;
+	outline-offset: -4px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 
 /* Emoticons panel */
@@ -265,8 +266,7 @@ fieldset.submit-buttons input {
 ---------------------------------------- */
 .inputbox {
 	border: 1px solid transparent;
-	padding: 4px 9px;
-	border-radius: 5px;
+	padding: 2px;
 }
 
 .inputbox:hover, .inputbox:focus {
@@ -312,11 +312,14 @@ input.button1, input.button2 {
 
 a.button1, input.button1, input.button3, a.button2, input.button2 {
 	width: auto !important;
-	padding: 4px 18px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
 	background: transparent none repeat-x top left;
 }
 
 a.button1, input.button1 {
+	font-weight: bold;
 	border: 1px solid transparent;
 }
 
@@ -334,9 +337,8 @@ input[type="button"], input[type="submit"], input[type="reset"], input[type="che
 }
 
 /* Alternative button */
-a.button1, input.button1, a.button2, input.button2, a.button3, input.button3 {
+a.button2, input.button2, input.button3 {
 	border: 1px solid transparent;
-	border-radius: 5px;
 }
 
 /* <a> button in the style of the form buttons */

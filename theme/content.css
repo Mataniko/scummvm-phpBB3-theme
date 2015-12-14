@@ -21,6 +21,10 @@ ul.topiclist dl {
 	position: relative;
 }
 
+ul.topiclist li.row dl {
+	padding: 2px 0;
+}
+
 ul.topiclist dt, ul.topiclist dd {
 	display: block;
 	float: left;
@@ -44,8 +48,7 @@ ul.topiclist.two-columns dt {
 	margin-right: -80px;
 }
 
-ul.topiclist dt .list-inner,
-ul.topiclist dt .list-inner-stats {
+ul.topiclist dt .list-inner {
 	margin-right: 440px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -94,11 +97,8 @@ ul.topiclist li.row dt a.subforum {
 }
 
 li.row {
+	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
-}
-
-li.row:last-child {
-  border-bottom: none;
 }
 
 li.row strong {
@@ -145,7 +145,7 @@ li.header dl.icon dt .list-inner {
 
 /* Forum list column styles */
 dl.icon {
-	background-position: 2px 50%;		/* Position of folder icon */
+	background-position: 10px 50%;		/* Position of folder icon */
 	background-repeat: no-repeat;
 }
 
@@ -154,9 +154,12 @@ dl.icon dt {
 	background-position: 5px 95%;		/* Position of topic icon */
 }
 
-dl.icon dt .list-inner,
-dl.icon dt .list-inner-stats {
-	margin-left: 25px;					/* Space for folder icon */
+dl.icon dt .list-inner {
+	padding-left: 45px;					/* Space for folder icon */
+}
+
+dl.icon dt, dl.icon dd {
+	min-height: 35px;
 }
 
 dl a.icon-link {						/* topic row icon links */
@@ -194,7 +197,7 @@ dl.icon dt li {
 	list-style-type: inherit;
 }
 
-dd.lastpost, dd.redirect, dd.moderation, dd.time, dd.info, dd.stats {
+dd.lastpost, dd.redirect, dd.moderation, dd.time, dd.info {
 	width: 250px;
 	font-size: 1.1em;
 }
@@ -207,19 +210,9 @@ dd.time {
 	line-height: 200%;
 }
 
-dd.lastpost > span,
-ul.topiclist dd.info > span,
-ul.topiclist dd.time > span,
-dd.redirect > span,
-dd.moderation > span,
-dd.stats > span {
-  font-size: .95em;
+dd.lastpost > span, ul.topiclist dd.info > span, ul.topiclist dd.time > span, dd.redirect > span, dd.moderation > span {
 	display: block;
-	padding: 0 5px;
-}
-
-.row dd.lastpost > span {
-  text-align: right;
+	padding-left: 5px;
 }
 
 dd.extra, dd.mark {
@@ -266,7 +259,6 @@ dd.option {
 }
 
 .postbody h3 img {
-	/* Also see tweaks.css */
 	vertical-align: bottom;
 }
 
@@ -517,7 +509,6 @@ blockquote .codebox {
 }
 
 .codebox code {
-	/* Also see tweaks.css */
 	overflow: auto;
 	display: block;
 	height: auto;
@@ -700,7 +691,6 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-	/* Also see tweaks.css */
 	margin: 5px 0 10px 0;
 	min-height: 80px;
 	border: 1px solid transparent;
