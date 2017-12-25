@@ -79,6 +79,7 @@ ul.topiclist dfn {
 	position: absolute;
 	left: -999px;
 	width: 990px;
+	display: none;
 }
 
 ul.topiclist li.row dt a.subforum {

@@ -77,10 +77,14 @@ a
 
 #search-box,
 #page-footer .navbar,
-.online-list,
 .birthday-list
 {
     display: none;
+}
+
+.online-list {
+    width: 100%;
+    float: left;
 }
 
 .gog
@@ -155,9 +159,7 @@ li.header dd
     font-weight: bold;
     font-weight: bold;
     line-height: 1;
-
-    padding: 3px 1px;
-
+    padding: 3px;
     color: #444;
     background: #c0c0c0;
 }
@@ -441,11 +443,21 @@ a:hover
 /* Pagination
 ---------------------------------------- */
 
+.pagination,
+.pagination li a,
+.pagination li span {
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.pagination ul {
+    margin: 0;
+}
+
 .pagination li a
 {
-    color: #5c758c;
-    border-color: #b4bac0;
-    background-color: #ecedee;
+    color: #a33;
+    text-decoration: underline;       
 }
 
 .pagination li.ellipsis span
@@ -456,18 +468,33 @@ a:hover
 
 .pagination li.active span
 {
-    color: #fff;
-    border-color: #4692bf;
-    background-color: #4692bf;
+    color: #000;
+    border-color: transparent;
+    background-color: transparent;
 }
 
 .pagination li a:hover,
 .pagination .dropdown-visible a.dropdown-trigger,
 .nojs .pagination .dropdown-container:hover a.dropdown-trigger
 {
-    color: #fff;
-    border-color: #368ad2;
-    background-color: #368ad2;
+    color: #f00;
+    border-color: 0;
+    background-color: transparent;
+}
+
+.pagination li a, .pagination li span {
+    border: 0;	
+    background-color: transparent;
+    padding: 0;
+}
+
+.pagination li.next a,
+.pagination li.previous a {
+    background-image: none;
+    color: #a33;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 /* Action-bars (container for post/reply buttons, pagination, etc.)
@@ -1435,6 +1462,11 @@ ul.linklist li.responsive-menu a.responsive-menu-link:before
 .section-viewforum .forum-title
 {
     display: none;
+}
+
+.smalltext {
+    font-size: 10px;
+    color: #000000;
 }
 
 .topic_read,
