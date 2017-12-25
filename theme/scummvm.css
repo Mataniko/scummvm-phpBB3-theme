@@ -256,6 +256,22 @@ dd.icon {
     background-image: url(./images/scummvm/folder.gif);
 }
 
+.post-bottom {
+    background: #ccc;  
+    width: 100%;
+    overflow: auto;
+    display: block;
+}
+
+.post-bottom .buttons {
+    float:right;
+    padding: 5px 10px 5px 10px;
+}
+
+form#viewtopic {
+    float: left;
+}
+.forum_read_locked,
 .icon_closed_forum
 {
     background-image: url(./images/scummvm/folder_lock.gif);
