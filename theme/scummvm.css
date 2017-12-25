@@ -199,6 +199,10 @@ dd.lastpost > span .icon_topic_latest
     text-indent: 10000px;
 }
 
+dd.icon {
+    width: 19px;
+    padding: 0 4px 0 4px !important;
+}
 .lastpost-time
 {
     white-space: nowrap;
@@ -1546,6 +1550,7 @@ dl a.icon-link
 {
     border-right: solid 1px #c0c0c0;
 }
+
 
 dl.icon.forum_link dt .list-inner
 {
